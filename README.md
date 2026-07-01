@@ -44,6 +44,6 @@ A console-based calculator developed using C++ that performs basic arithmetic op
 
 📧 Email: khaanifatima22@gmail.com
 
-📍 Matiari, Sindh, Pakistan
+📍 Hyderabad, Sindh, Pakistan
 
 💼 LinkedIn: www.linkedin.com/in/khansa-samoo-91033a36b
