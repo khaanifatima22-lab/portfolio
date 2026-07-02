@@ -1,4 +1,4 @@
-# 👋 Hi, I'm Khansa Mazhar Hussain Samoo
+# 👋 Hi, I'm Khansa Samoo
 
 ## 🎓 About Me
 
