@@ -6,108 +6,120 @@
 <title>Khansa Samoo | Portfolio</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
+scroll-behavior:smooth;
+font-family:Arial,Helvetica,sans-serif;
 }
 
 body{
-background:#f5f7fa;
+background:#f4f7fb;
 color:#333;
-line-height:1.6;
 }
 
-header{
-  nav{
-    background:#111827;
-    padding:15px;
-    text-align:center;
-    position:sticky;
-    top:0;
-    z-index:1000;
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:#0f172a;
+padding:15px;
+text-align:center;
+z-index:1000;
 }
 
 nav a{
-    color:white;
-    text-decoration:none;
-    margin:0 15px;
-    font-size:18px;
-    font-weight:bold;
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:bold;
 }
 
 nav a:hover{
-    color:#3b82f6;
+color:#60a5fa;
 }
-background:#0f172a;
+
+header{
+background:linear-gradient(135deg,#2563eb,#1e3a8a);
 color:white;
 text-align:center;
-padding:60px 20px;
+padding:120px 20px 80px;
 }
 
 .avatar{
 width:120px;
 height:120px;
-background:#2563eb;
+margin:auto;
 border-radius:50%;
+background:white;
 display:flex;
 align-items:center;
 justify-content:center;
 font-size:60px;
-margin:0 auto 20px;
 }
 
-header
-  <div class="avatar">
-👩‍💻
-</div>
-   h1{
-font-size:40px;
-margin-bottom:10px;
+header h1{
+margin-top:20px;
+font-size:42px;
 }
 
 header p{
+margin-top:10px;
 font-size:20px;
-margin-bottom:20px;
 }
 
 .btn{
 display:inline-block;
+margin-top:25px;
 padding:12px 25px;
-background:#2563eb;
-color:white;
+background:white;
+color:#2563eb;
 text-decoration:none;
-border-radius:6px;
+border-radius:8px;
 font-weight:bold;
 }
 
 .btn:hover{
-background:#1d4ed8;
+background:#e5e7eb;
 }
 
-section{
+.container{
 max-width:1000px;
-margin:30px auto;
-background:white;
-padding:30px;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,.1);
+margin:auto;
+padding:40px 20px;
 }
 
-h2{
+.card{
+background:white;
+padding:25px;
+margin:25px 0;
+border-radius:12px;
+box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.card h2{
 color:#2563eb;
 margin-bottom:15px;
-border-bottom:2px solid #ddd;
-padding-bottom:8px;
 }
 
-ul{
-margin-left:25px;
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
 }
 
-li{
-margin-bottom:10px;
+.skill{
+background:#eff6ff;
+padding:15px;
+border-radius:8px;
+font-weight:bold;
+text-align:center;
+}
+  .skills .skill:hover{
+transform:scale(1.03);
+transition:.3s;
 }
 
 footer{
@@ -115,113 +127,84 @@ background:#0f172a;
 color:white;
 text-align:center;
 padding:20px;
-margin-top:40px;
+margin-top:30px;
 }
-</style>
 
+</style>
 </head>
 
 <body>
+
 <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#certifications">Certificates</a>
-    <a href="#contact">Contact</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#certifications">Certificates</a>
+<a href="#contact">Contact</a>
 </nav>
-<header id="home">
-<div class="avatar">
-👩‍💻
-</div>
+
+<header>
+<div class="avatar">👩‍💻</div>
 
 <h1>Khansa Samoo</h1>
 
 <p>BS Computer Science Student | AI & Cybersecurity Enthusiast</p>
 
-<a class="btn" href="https://www.linkedin.com/in/khansa-samoo-91033a36b/" target="_blank">
-Visit My LinkedIn
-</a>
-
+<a class="btn" href="https://www.linkedin.com/in/khansa-samoo-91033a36b/" target="_blank">LinkedIn</a>
 </header>
 
-<section>
+<div class="container">
 
-<h2>🎓 About Me</h2>
+<div class="card" id="about">
+<h2>About Me</h2>
+<p>
+I am a BS Computer Science student at Isra University, Hyderabad, Pakistan. I have a strong interest in Artificial Intelligence, Cybersecurity, and Software Development. I enjoy learning new technologies and building practical projects.
+</p>
+</div>
+
+<div class="card" id="skills">
+<h2>Technical Skills</h2>
+
+<div class="skills">
+<div class="skill">C++</div>
+<div class="skill">Artificial Intelligence</div>
+<div class="skill">Cybersecurity</div>
+<div class="skill">Microsoft Office</div>
+<div class="skill">Internet Research</div>
+<div class="skill">Typing</div>
+</div>
+
+</div>
+
+<div class="card" id="projects">
+<h2>Projects</h2>
+
+<h3>Calculator in C++</h3>
 
 <p>
-I am a Bachelor of Science in Computer Science (BSCS) student at Isra University, Hyderabad, Pakistan.
+A console-based calculator developed using C++ that performs arithmetic operations using functions, loops and conditional statements.
 </p>
 
-<br>
+</div>
 
-<p>
-I have a strong interest in Artificial Intelligence, Cybersecurity, and Software Development. I enjoy learning new technologies, solving problems, and building practical projects to improve my technical skills.
-</p>
+<div class="card" id="certifications">
 
-<br>
-
-<p>
-Currently, I am completing the Google Cybersecurity Professional Certificate and have successfully earned the Google Prompting Essentials Specialization.
-</p>
-
-</section>
-
-<section>
-
-<h2>💻 Technical Skills</h2>
+<h2>Certifications</h2>
 
 <ul>
-<li>C++</li>
-<li>Microsoft Word</li>
-<li>Microsoft Excel</li>
-<li>Microsoft PowerPoint</li>
-<li>Artificial Intelligence</li>
-<li>Cybersecurity</li>
-<li>Internet Research</li>
-<li>Data Processing</li>
-<li>Translation</li>
-<li>Typing</li>
+<li>Google Prompting Essentials Specialization</li>
+<li>Google Cybersecurity Professional Certificate (In Progress)</li>
 </ul>
 
-</section>
+</div>
 
-<section>
+<div class="card" id="contact">
 
-<h2>📂 Projects</h2>
-
-<h3>🧮 Calculator in C++</h3>
-
-<br>
-
-<p>
-A console-based calculator developed using C++ that performs basic arithmetic operations while demonstrating programming fundamentals such as functions, conditional statements, loops, and user input handling.
-</p>
-
-</section>
-
-<section>
-
-<h2>📜 Certifications</h2>
-
-<ul>
-<li>✅ Google Prompting Essentials Specialization</li>
-<li>🔄 Google Cybersecurity Professional Certificate (In Progress)</li>
-</ul>
-
-</section>
-
-<section>
-
-<h2>📫 Contact</h2>
+<h2>Contact</h2>
 
 <p><strong>Email:</strong> khaanifatima22@gmail.com</p>
 
-<br>
-
 <p><strong>Location:</strong> Hyderabad, Sindh, Pakistan</p>
-
-<br>
 
 <p>
 <strong>LinkedIn:</strong>
@@ -230,12 +213,12 @@ www.linkedin.com/in/khansa-samoo-91033a36b
 </a>
 </p>
 
-</section>
+</div>
+
+</div>
 
 <footer>
-
-<p>© 2026 Khansa Samoo | All Rights Reserved.</p>
-
+© 2026 Khansa Samoo | All Rights Reserved.
 </footer>
 
 </body>
