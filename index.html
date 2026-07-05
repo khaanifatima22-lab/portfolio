@@ -1,230 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Khansa Samoo | Portfolio</title>
-
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
-font-family:Arial,Helvetica,sans-serif;
-}
-
-body{
-background:#f4f7fb;
-color:#333;
-}
-
-nav{
-position:fixed;
-top:0;
-width:100%;
-background:#0f172a;
-padding:15px;
-text-align:center;
-z-index:1000;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin:0 15px;
-font-weight:bold;
-}
-
-nav a:hover{
-color:#60a5fa;
-}
-
-header{
-background:linear-gradient(135deg,#2563eb,#1e3a8a);
-color:white;
-text-align:center;
-padding:120px 20px 80px;
-}
-
-.avatar{
-width:120px;
-height:120px;
-margin:auto;
-border-radius:50%;
-background:white;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:60px;
-}
-
-header h1{
-margin-top:20px;
-font-size:42px;
-}
-
-header p{
-margin-top:10px;
-font-size:20px;
-}
-
-.btn{
-display:inline-block;
-margin-top:25px;
-padding:12px 25px;
-background:white;
-color:#2563eb;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;
-}
-
-.btn:hover{
-background:#e5e7eb;
-}
-
-.container{
-max-width:1000px;
-margin:auto;
-padding:40px 20px;
-}
-
-.card{
-background:white;
-padding:25px;
-margin:25px 0;
-border-radius:12px;
-box-shadow:0 4px 15px rgba(0,0,0,.08);
-}
-
-.card h2{
-color:#2563eb;
-margin-bottom:15px;
-}
-
-.skills{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:15px;
-}
-
-.skill{
-background:#eff6ff;
-padding:15px;
-border-radius:8px;
-font-weight:bold;
-text-align:center;
-}
-  .skills .skill:hover{
-transform:scale(1.03);
-transition:.3s;
-}
-
-footer{
-background:#0f172a;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:30px;
-}
-
-</style>
-</head>
-
-<body>
-
-<nav>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#certifications">Certificates</a>
-<a href="#contact">Contact</a>
-</nav>
-
-<header>
-<div class="avatar">👩‍💻</div>
-
-<h1>Khansa Samoo</h1>
-
-<p>BS Computer Science Student | AI & Cybersecurity Enthusiast</p>
-
-<a class="btn" href="https://www.linkedin.com/in/khansa-samoo-91033a36b/" target="_blank">LinkedIn</a>
-  <br><br>
-
-<a class="btn" href="https://github.com/khaanifatima22-lab" target="_blank">
-GitHub
-</a>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif;scroll-behavior:smooth}
+body{background:#eef2f7;color:#222}
+nav{position:fixed;top:0;width:100%;background:#111827;padding:16px;text-align:center;z-index:10}
+nav a{color:#fff;text-decoration:none;margin:0 16px;font-weight:600}
+nav a:hover{color:#60a5fa}
+header{padding:130px 20px 90px;text-align:center;color:#fff;background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80') center/cover}
+.avatar{width:130px;height:130px;border-radius:50%;background:#fff;color:#2563eb;display:flex;align-items:center;justify-content:center;font-size:64px;margin:auto}
+h1{font-size:46px;margin:20px 0 10px}
+.btn{display:inline-block;padding:12px 24px;border-radius:8px;text-decoration:none;color:#fff;margin:10px;font-weight:600}
+.l{background:#0A66C2}.g{background:#24292e}.c{background:#16a34a}
+.container{max-width:1100px;margin:auto;padding:40px 20px}
+.card{background:#fff;border-radius:12px;padding:28px;margin:25px 0;box-shadow:0 6px 18px rgba(0,0,0,.08);transition:.3s}
+.card:hover{transform:translateY(-6px)}
+h2{color:#2563eb;margin-bottom:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
+.item{background:#eff6ff;padding:16px;border-radius:8px;text-align:center;font-weight:600}
+footer{background:#111827;color:#fff;text-align:center;padding:20px;margin-top:30px}
+</style></head><body>
+<nav><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#certifications">Certificates</a><a href="#contact">Contact</a></nav>
+<header><div class="avatar">👩‍💻</div><h1>Khansa Samoo</h1><p>BS Computer Science Student | AI & Cybersecurity Enthusiast</p>
+<a class="btn l" href="https://www.linkedin.com/in/khansa-samoo-91033a36b/" target="_blank">LinkedIn</a>
+<a class="btn g" href="https://github.com/khaanifatima22-lab" target="_blank">GitHub</a>
+<a class="btn c" href="#">Download CV (Coming Soon)</a>
 </header>
-
 <div class="container">
-
-<div class="card" id="about">
-<h2>About Me</h2>
-<p>
-I am a BS Computer Science student at Isra University, Hyderabad, Pakistan. I have a strong interest in Artificial Intelligence, Cybersecurity, and Software Development. I enjoy learning new technologies and building practical projects.
-</p>
-</div>
-
-<div class="card" id="skills">
-<h2>Technical Skills</h2>
-
-<div class="skills">
-<div class="skill">C++</div>
-<div class="skill">Artificial Intelligence</div>
-<div class="skill">Cybersecurity</div>
-<div class="skill">Microsoft Office</div>
-<div class="skill">Internet Research</div>
-<div class="skill">Typing</div>
-</div>
-
-</div>
-
-<div class="card" id="projects">
-<h2>Projects</h2>
-
-<h3>Calculator in C++</h3>
-
-<p>
-A console-based calculator developed using C++ that performs arithmetic operations using functions, loops and conditional statements.
-</p>
-
-</div>
-
-<div class="card" id="certifications">
-
-<h2>Certifications</h2>
-
-<ul>
-<li>Google Prompting Essentials Specialization</li>
-<li>Google Cybersecurity Professional Certificate (In Progress)</li>
-</ul>
-
-</div>
-
-<div class="card" id="contact">
-
-<h2>Contact</h2>
-
-<p><strong>Email:</strong> khaanifatima22@gmail.com</p>
-
-<p><strong>Location:</strong> Hyderabad, Sindh, Pakistan</p>
-
-<p>
-<strong>LinkedIn:</strong>
-<a href="https://www.linkedin.com/in/khansa-samoo-91033a36b/" target="_blank">
-www.linkedin.com/in/khansa-samoo-91033a36b
-</a>
-</p>
-
-</div>
-
-</div>
-
-<footer>
-© 2026 Khansa Samoo | All Rights Reserved.
-</footer>
-
-</body>
-</html>
+<div class="card" id="about"><h2>About Me</h2><p>I am a BS Computer Science student at Isra University, Hyderabad, Pakistan. I am passionate about Artificial Intelligence, Cybersecurity and Software Development. I enjoy learning new technologies and building practical projects.</p></div>
+<div class="card" id="skills"><h2>Technical Skills</h2><div class="grid"><div class=item>C++</div><div class=item>Artificial Intelligence</div><div class=item>Cybersecurity</div><div class=item>Microsoft Office</div><div class=item>Internet Research</div><div class=item>Typing</div><div class=item>Data Processing</div><div class=item>Translation</div></div></div>
+<div class="card" id="projects"><h2>Projects</h2><h3>🧮 Calculator in C++</h3><p>A console-based calculator built with C++ using functions, loops and conditional statements to perform arithmetic operations.</p></div>
+<div class="card" id="certifications"><h2>Certificates</h2><ul><li>Google Prompting Essentials Specialization</li><li>Google Cybersecurity Professional Certificate (In Progress)</li></ul></div>
+<div class="card" id="contact"><h2>Contact</h2><p><b>Email:</b> khaanifatima22@gmail.com</p><p><b>Location:</b> Hyderabad, Sindh, Pakistan</p><p><b>LinkedIn:</b> https://www.linkedin.com/in/khansa-samoo-91033a36b/</p><p><b>GitHub:</b> https://github.com/khaanifatima22-lab</p></div>
+</div><footer>© 2026 Khansa Samoo | All Rights Reserved.</footer></body></html>
