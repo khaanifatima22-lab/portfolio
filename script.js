@@ -1,4 +1,4 @@
-// ===== DARK MODE =====
+ // ===== DARK MODE =====
 
 const darkBtn = document.getElementById("darkMode");
 
