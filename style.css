@@ -480,3 +480,67 @@ html{
 scroll-padding-top:80px;
 
 }
+/* ===== DARK MODE BUTTON ===== */
+
+.dark-btn{
+position:absolute;
+right:20px;
+top:50%;
+transform:translateY(-50%);
+background:#2563eb;
+color:white;
+border:none;
+padding:8px 14px;
+border-radius:8px;
+cursor:pointer;
+font-size:18px;
+transition:.3s;
+}
+
+.dark-btn:hover{
+background:#1d4ed8;
+}
+
+/* ===== DARK MODE ===== */
+
+body.dark{
+background:#0f172a;
+color:white;
+}
+
+body.dark .card{
+background:#1e293b;
+color:white;
+}
+
+body.dark .card p,
+body.dark .project p,
+body.dark li{
+color:#e5e7eb;
+}
+
+body.dark .project{
+background:#334155;
+border-left:6px solid #60a5fa;
+}
+
+body.dark .skill{
+background:#334155;
+color:white;
+}
+
+body.dark .skill:hover{
+background:#2563eb;
+}
+
+body.dark nav{
+background:#020617;
+}
+
+body.dark footer{
+background:#020617;
+}
+
+body.dark .card h2{
+color:#60a5fa;
+}
